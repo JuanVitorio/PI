@@ -27,7 +27,7 @@ header {
 .text1 {
   position: absolute;
   display: inline;
-  top: 5%;
+  bottom: -18px;
   font-size: 130px;
   letter-spacing: 2px;
   text-align: center;
@@ -192,14 +192,17 @@ header {
 
 #btlogin:hover {
   background-color: #939393;
+  box-shadow: 0 6px 8px 0 rgb(158, 156, 158), 0 6px 8px 0 rgb(158, 156, 158);
 }
 
 #bt2:hover {
   background-color: #939393;
+  box-shadow: 0 6px 8px 0 rgb(228, 225, 228), 0 6px 8px 0 rgb(228, 225, 228);
 }
 
 #bt3:hover {
   background-color: #939393;
+  box-shadow: 0 6px 8px 0 rgb(228, 225, 228), 0 6px 8px 0 rgb(228, 225, 228);
 }
 
 #form {
@@ -211,6 +214,7 @@ header {
   top:50%;
   transform: translate(-50%, -50%);
   display: none;
+  
 }
 
 .card {
@@ -260,6 +264,7 @@ header {
   top:50%;
   transform: translate(-50%, -50%);
   display: none;
+  
 }
 
 .card_emp {
@@ -303,7 +308,7 @@ header {
 .login{
   position: absolute;
   width: 40%;
-  height: 60%;
+  height: 70%;
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
@@ -320,7 +325,7 @@ header {
   width: 60%;
   height: 70%;
   display: none;
-  box-shadow: 10px 10px 5px #716F6F ;
+  box-shadow: 0 18px 18px 0 rgb(133, 132, 133), 0 18px 18px 0 rgb(133, 132, 133);
 
 }
 
@@ -387,6 +392,7 @@ header {
 
 .entrar:hover{
   background-color: rgb(248, 240, 230);
+  box-shadow: 0 6px 8px 0 rgb(228, 225, 228), 0 6px 8px 0 rgb(228, 225, 228);
 }
 
 .check1{
