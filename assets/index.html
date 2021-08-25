@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo/LogoDefinitivaPI2.png" />
+    <title>Femina Tech</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <script>
+
+    function cadastro_dev(){
+
+      var dev = document.getElementById("form");
+      dev.style = "display: block";
+
+      var dev2 = document.getElementById("check2");
+      dev2.style = "display: block";
+
+      var dev3 = document.getElementById("check1");
+
+      if(dev3.style.display != 'none'){
+        dev3.style = "display: none";
+      }
+
+      dev4 = document.getElementById('checkbox2');
+
+      if(dev4.checked){
+        dev4.checked = false;
+      }
+
+      var dev5 = document.getElementById("login");
+
+      if(dev5.style.display != 'none'){
+        dev5.style = "display: none";
+      }
+
+    }
+
+    function cadastro_emp(){
+
+      var dev = document.getElementById("form_emp");
+      dev.style = "display: block";
+
+      var dev2 = document.getElementById("check1");
+      dev2.style = "display: block";
+
+      var dev3 = document.getElementById("check2");
+
+      if(dev3.style.display != 'none'){
+        dev3.style = "display: none";
+      }  
+      
+      dev4 = document.getElementById('checkbox1');
+      
+      if(dev4.checked){
+        dev4.checked = false;
+      }
+
+      var dev5 = document.getElementById("login");
+
+      if(dev5.style.display != 'none'){
+        dev5.style = "display: none";
+      }
+    }
+
+    function login(){
+
+      var dev = document.getElementById("login");
+      dev.style = "display: block";
+
+      var dev = document.getElementById("form_login");
+      dev.style = "display: block";
+
+      var dev2 = document.getElementById("check2");
+
+      if(dev2.style.display != 'none'){
+        dev2.style = "display: none";
+      }
+
+      var dev3 = document.getElementById("check1");
+
+      if(dev3.style.display != 'none'){
+        dev3.style = "display: none";
+      }
+
+      var dev4 = document.getElementById('checkbox3');
+
+      if(dev4.checked){
+        dev4.checked = false;
+      }
+
+    }
+
+  </script>
+
+  <body>
+
+    <header>
+      <h1 class="text1">FEMINA</h1>
+      <h2 class="text2">TECH</h2>
+      <img
+        class="logo"
+        src="img/logo/LOGO.png"
+        alt=" Fundo circular de cor pêssego com a silheuta de uma mulher, cercada pelo nome Femina Tech"
+      />
+
+      <div class="divisao">
+        <hr />
+      </div>
+
+      <div class="bt1">
+        <button id="btlogin" onclick="login()">LOGIN</button>
+      </div>
+    </header>
+
+    <div class="corpo">
+      <img
+        class="img2"
+        src="img/imgbody/Body2.jpeg"
+        alt="Uma mulher programando"
+      />
+
+      <div class="linhas">
+        <hr class="linha1" />
+        <hr class="linha2" />
+      </div>
+
+      <div class="cad">
+        <p>
+          <u> <strong>Cadastre-se</strong> </u>
+        </p>
+
+        <div class="bt2">
+          <button onclick="cadastro_dev()" id="bt2"> Developer </button>
+
+        </div>
+
+        <div class="bt3">
+          <button onclick="cadastro_emp()" id="bt3"> Empresa </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro">
+      <p class="text3"><strong>Quem somos?</strong></p>
+
+      <p class="apresentacao">
+        O alicerce da computação foi consolidado a partir do trabalho pioneiro
+        de pesquisadoras como Ada Lovelace - considerada a mãe da programação -
+        Hedy Lamarr (Hedwig Eva Maria Kiesler)- inventora do sistema que serviu
+        como base para o bluetooth e o wifi- entre outras. A
+        <strong>Femina Tech</strong> veio como um instrumento para ajudar as
+        profissionais femininas a se inserirem no mercado de trabalho de TI de
+        maneira mais orgânica e fazendo jus às pioneiras da área.
+      </p>
+    </div>
+
+    <div class="check2" id="check2">
+      <input type="checkbox" id="checkbox2">
+      <label for="checkbox2" class="label2"> 
+        <form id ="form">
+          <div class ="card">
+              <div class="card-top">
+                  <img class="icon" src="img/iconX.png" width="3%">
+                  <h2>CADASTRO DE DESENVOLVEDORA</h2>
+                  <div class="card-group">
+                    <button>Criar</button>
+                </div>
+              </div>
+            </div>
+        </form>
+      </label>
+    </div>
+
+    <div class="check1" id="check1">
+      <input type="checkbox" id="checkbox1">
+      <label for="checkbox1" class="label1"> 
+        <form id ="form_emp">
+          <div class ="card_emp">
+              <div class="card-top-emp">
+                <img class="icon" src="img/iconX.png" width="3%">
+                  <h2>CADASTRO DA EMPRESA</h2>
+                  <div class="card-group-emp">
+                    <button>Criar</button>
+                </div>
+              </div>
+            </div>
+        </form>
+      </label>
+    </div>
+
+    <div class='login' id='login'>
+      <input type="checkbox" id="checkbox3">
+      <label for="checkbox3" class="label3"> 
+      <form id="form_login" method="POST" action="verificacao.php">
+        <header id="hlogin">
+           <img class="icon" src="img/iconX.png" width="3%">
+            <h1>LOGIN</h1>
+        </header>
+        <div class="botoesl">
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="email" placeholder="Email" autofocus>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" class="senha" placeholder="Senha">
+            <button type="submit" class="entrar" >Entrar</button>
+        </div>
+    </form>
+  </label>
+</div>
+
+</body>
+
+</html>
+  </body>
+</html>

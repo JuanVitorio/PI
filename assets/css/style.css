@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*#A0D9D2   azul
+#FAD9AE   amarelo-pessego|cor da logo
+#716F6F  cinza*/
+header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: #a0d9d2;
+  color: white;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, fantasy;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  width: 170px;
+  bottom: -5%;
+}
+
+.text1 {
+  position: absolute;
+  display: inline;
+  top: 5%;
+  font-size: 130px;
+  letter-spacing: 2px;
+  text-align: center;
+  right: 35%;
+}
+
+.text2 {
+  display: inline-block;
+  position: absolute;
+  bottom: 1%;
+  color: #716f6f;
+  font-size: 40px;
+  right: 30%;
+  letter-spacing: 2px;
+}
+
+.divisao {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  top: 95%;
+  background-color: #fad9ae;
+}
+
+.img2 {
+  position: absolute;
+  width: 500px;
+  top: 5%;
+  left: 10%;
+}
+
+#btlogin {
+  display: inline-block;
+  position: absolute;
+  height: 40%;
+  width: 10%;
+  background-color: #716f6f;
+  border-radius: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+  right: 2%;
+  top:10%;
+}
+
+.cad {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  height: 40%;
+}
+
+.cad p {
+  position: absolute;
+  top: 2%;
+  text-align: center;
+  font-size: 30px;
+  left: 35%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #716f6f;
+}
+
+.corpo {
+  position: absolute;
+  top: 23%;
+  height: 100%;
+  width: 50%;
+}
+
+.linhas {
+  position: absolute;
+  top: 48.5%;
+  height: 60%;
+  width: 100%;
+  left: 10%;
+}
+
+.linha1 {
+  position: absolute;
+  top: 45%;
+  width: 80%;
+  height: 5%;
+  background-color: #a0d9d2;
+}
+
+.linha2 {
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  height: 2%;
+  background-color: #fad9ae;
+}
+
+#bt2 {
+  position: absolute;
+  top: 30%;
+  height: 20%;
+  width: 30%;
+  background-color: #716f6f;
+  border-radius: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  left: 20%;
+  color: #fff;
+  letter-spacing: 1px;
+  
+}
+
+#bt3 {
+  position: absolute;
+  top: 30%;
+  height: 20%;
+  width: 30%;
+  background-color: #716f6f;
+  border-radius: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  left: 55%;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.intro {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  width: 40%;
+  height: 100%;
+}
+
+.apresentacao {
+  position: absolute;
+  display: inline;
+  text-align: justify;
+  display: block;
+  top: 20%;
+  left: 10%;
+  width: 85%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text3 {
+  display: inline;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  text-align: center;
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #716f6f;
+  letter-spacing: 1px;
+}
+
+#btlogin:hover {
+  background-color: #939393;
+}
+
+#bt2:hover {
+  background-color: #939393;
+}
+
+#bt3:hover {
+  background-color: #939393;
+}
+
+#form {
+  width: 400px;
+  margin: auto;
+  padding-top: 40px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.card {
+  box-shadow: 1px 1px 5px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  padding: 100px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid rgb(255, 237, 198);
+}
+
+.card-top {
+  text-align: center;
+  color: rgb(85, 85, 85);
+  -webkit-text-stroke-width: 1px;
+  background-color: rgb(255, 237, 198);
+  position: absolute;
+  bottom: 50%;
+  padding-top: 10%;
+  width: 80%;
+  right: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  
+}
+
+.card-group > button {
+  background-color: rgb(124, 199, 201);
+  width: 100%;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  position: absolute;
+  bottom: -95%;
+  left: 1%;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+#form_emp {
+  width: 400px;
+  margin: auto;
+  padding-top: 40px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.card_emp {
+  box-shadow: 1px 1px 5px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  padding: 100px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid rgb(255, 237, 198);
+}
+
+.card-top-emp {
+  text-align: center;
+  color: rgb(85, 85, 85);
+  -webkit-text-stroke-width: 1px;
+  background-color: rgb(255, 237, 198);
+  position: absolute;
+  bottom: 50%;
+  padding-top: 15%;
+  width: 80%;
+  right: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  
+}
+
+.card-group-emp > button {
+  background-color: rgb(124, 199, 201);
+  width: 100%;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  position: absolute;
+  bottom: -95%;
+  left: 1%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.login{
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#form_login{
+  position: absolute;
+  background-color: #fff;;
+  border-radius: 5px;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 70%;
+  display: none;
+  box-shadow: 10px 10px 5px #716F6F ;
+
+}
+
+.botoesl{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 100%;
+  
+}
+
+.botoesl input{
+  display: block;
+  height: 25px;
+  width: 80%;
+  margin: 10px;
+  background-color: #716F6F;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.entrar{
+ position: absolute;
+ background-color: #FAD9AE;
+ width: 40%;
+ height: 30%;
+ border-radius: 20px;
+ color: #716F6F;
+ left: 25%;
+ font-size: 20px;
+ top: 110%;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ letter-spacing: 1px;
+ cursor: pointer;
+
+}
+
+#hlogin{
+ position: absolute;
+ border-radius: 5px;
+ background-color: #A0D9D2 ;
+ text-align: center;
+ width: 100%;
+ height: 20%;
+ color: #fff;
+}
+
+#hlogin h1{
+ position: absolute;
+ top: 10%;
+ left: 50%;
+ transform: translateX(-50%);
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ letter-spacing: 1px;
+ font-size: 50px;
+
+}
+
+#hlogin .icon{
+    position: absolute;
+    left: 3%;
+    top: 10%;
+}
+
+.entrar:hover{
+  background-color: rgb(248, 240, 230);
+}
+
+.check1{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  
+}
+
+.check2{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.botoesl label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+.icon{
+  position: absolute;
+  left:-10%;
+  top:-10%;
+}
+
+#checkbox1:checked + .label1{
+  display: none;
+}
+
+#checkbox2:checked + .label2{
+  display: none;
+}
+
+#checkbox3:checked + .label3{
+  display: none;
+}
