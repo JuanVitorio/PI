@@ -1,0 +1,22 @@
+.cad {
+  padding: 16px;
+}
+
+div {
+  display: inline-block;
+  border: none;
+  background: #cfcdcd;
+  padding: 8px;
+  width: 30%;
+  margin: 5px 39px 12px 22px;
+}
+button {
+  background-color: #fad9ae;
+  width: 100%;
+  border-radius: 30px;
+  padding: 5px;
+  color: black;
+}
+.img {
+  width: 100%;
+}
