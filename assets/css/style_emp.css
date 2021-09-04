@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.cad {
+  display: inline-block;
+  border: none;
+  background: #cfcdcd;
+  width: 35%;
+  margin: 1px 30px 12px 22px;
+  height: 75%;
+  padding: 18px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgba(61, 61, 61, 0.521), 0 6px 20px 0 rgba(61, 61, 61, 0.521);
+}
+
+.cad:hover{
+  outline: #716f6f solid thin;
+}
+
+form{
+  position: absolute;
+  width: 100%;
+  height: 105%;   
+}
+
+button {
+  position: relative;
+  background-color: #fad9ae;
+  width: 20%;
+  border-radius: 30px;
+  padding: 8px;
+  color: black;
+  top: 5%;
+  cursor:pointer;
+}
+
+button:hover{
+  background-color: #fdcb8a;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  top: 10%;
+}
+
+.form{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:25%;
+}
+
+.icone{
+  position: relative;
+  width: 30%;
+  height: 20%;
+  display:inline-block;
+}
+
+label{
+  margin-bottom: 2%;
+}
+
+input{
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+select{
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.cad5{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: #a0d9d2;
+  color: white;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, fantasy;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  width: 15%;
+  bottom: -15%;
+}
+
+.text1 {
+  position: absolute;
+  display: inline;
+  bottom: -18px;
+  font-size: 130px;
+  letter-spacing: 2px;
+  text-align: center;
+  right: 35%;
+}
+
+.text2 {
+  display: inline-block;
+  position: absolute;
+  bottom: 1%;
+  color: #716f6f;
+  font-size: 40px;
+  right: 30%;
+  letter-spacing: 2px;
+}
+
+.divisao {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  top: 95%;
+  background-color: #fad9ae;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}

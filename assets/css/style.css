@@ -298,12 +298,10 @@ header {
   width: 100%;
   border-radius: 30px;
   padding: 15px;
-  color: white;
   position: absolute;
   bottom: -95%;
   left: 1%;
   cursor: pointer;
-  font-size: 20px;
 }
 
 .login{
@@ -423,13 +421,21 @@ input[type="checkbox"]{
 }
 
 .botoesl label{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .icon{
   position: absolute;
   left:-10%;
   top:-10%;
+}
+
+a{
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 #checkbox1:checked + .label1{
