@@ -1,11 +1,18 @@
+<?php
+  include("config.php");
+
+  $consulta = $conexao->query("select * from tb_linguagem_programacao");
+  $consulta2 = $conexao->query("select * from tb_nacionalidades");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="icon" href="img/logo/LogoDefinitivaPI2.png"/>
+    <link rel="icon" href="../img/logo/LogoDefinitivaPI2.png"/>
     <title>Cadastro Desenvolvedora: Femina Tech</title>
-    <link rel="stylesheet" href="css/style_caddev.css"/>
+    <link rel="stylesheet" href="../css/style_caddev.css"/>
   </head>
 
   <body>
@@ -15,7 +22,7 @@
       <h2 class="text2">TECH</h2>
       <img
         class="logo"
-        src="img/logo/LOGO.png"
+        src="../img/logo/LOGO.png"
         alt=" Fundo circular de cor pêssego com a silheuta de uma mulher, cercada pelo nome Femina Tech"
       />
 
@@ -25,12 +32,12 @@
     </header>
 
     <div class= "form">
-    <form action="processa.php" method="POST">
+    <form action="processa_dev.php" method="POST">
       <div class="cad">
         <h1 style="text-align:center">Seu Cadastro</h1>
         <hr/>
         <div class='icone'>
-          <img class="img" src="img/img_cadastro/user-female.png" alt="Icone de uma mulher"/>
+          <img class="img" src="../img/img_cadastro/user-female.png" alt="Icone de uma mulher"/>
         </div>
         <div class="cad1">
           <label for="nome"><b>Nome Completo</b> </label>
@@ -54,9 +61,9 @@
           <form>
             <label for="nacionalidade">Nacionalidade</label>
               <select name="nacionalidade" id="nacionalidade">
-                <option value="1">Brasileira</option>
-                <option value="2">Estrangeira</option>
-                <option value="3">Dupla nacionalidade</option>
+              <?php while($resultado2 = $consulta2->fetch_assoc()){?>
+                <option value="<?php echo $resultado2['nac_codigonacionalidade'];?>"><?php echo $resultado2['nac_nacionalidade'];?></option>
+              <?php }?>
               </select>
           </form>
         </div>
@@ -88,16 +95,13 @@
 
         <div class="cad10" style="width: 80%;">
           <label>Linguagens que utiliza</label><br>
-          <label for="1"><input type="checkbox" name="linguagens[]" value="1"/>Python</label>
-          <label for="2"><input type="checkbox" name="linguagens[]" value="2"/>Java</label>
-          <label for="3"><input type="checkbox" name="linguagens[]" value="3"/>C++</label>
-          <label for="4"><input type="checkbox" name="linguagens[]" value="4"/>JavaScript HTML CSS</label>  
-          <label for="5"><input type="checkbox" name="linguagens[]" value="5"/>Ruby</label>
-          <label for="6"><input type="checkbox" name="linguagens[]" value="6"/>C#</label>
+          <?php while($resultado1 = $consulta->fetch_assoc()){?>
+          <label for="<?php echo $resultado1['lig_codigolinguagem'];?>"><input type="checkbox" name="linguagens[]" value="<?php echo $resultado1['lig_codigolinguagem'];?>"/><?php echo $resultado1['lig_linguagemprogramacao'];?></label>
+          <?php }?>
         </div>
 
         <div>
-          <button  class="botao1"><a href='index.html'>Cancelar</a></button>
+          <button  class="botao1"><a href='..//index.html'>Cancelar</a></button>
           <button type="submit" class="botao2">Pronto</button>
         </div>
       </div>

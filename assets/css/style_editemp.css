@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*#A0D9D2   azul
+  #FAD9AE   amarelo-pessego|cor da logo
+  #716F6F  cinza*/
+  header {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: #a0d9d2;
+    color: white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, fantasy;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 10%;
+    width: 15%;
+    bottom: -15%;
+  }
+  
+  .text1 {
+    position: absolute;
+    display: inline;
+    bottom: -18px;
+    font-size: 130px;
+    letter-spacing: 2px;
+    text-align: center;
+    right: 35%;
+  }
+  
+  .text2 {
+    display: inline-block;
+    position: absolute;
+    bottom: 1%;
+    color: #716f6f;
+    font-size: 40px;
+    right: 30%;
+    letter-spacing: 2px;
+  }
+  
+  .divisao {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 95%;
+    background-color: #fad9ae;
+  }
+  
+  .perfil{
+    display: inline-block;
+    position: absolute;
+    height: 90%;
+    width: 96%;
+    top: 25%;
+    left: 2%;
+    border: 1px #716f6f solid;
+  }
+  
+  .decima{
+    display: inline-block;
+    position: relative;
+    height: 40%;
+    width: 100%;
+    background-color: #abe2dc ;
+  }
+  
+  .nome{
+    position: absolute;
+    top: 35%;
+    right: 35%;
+  }
+  
+  .funcao{
+    position: absolute;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px; 
+    color: white;
+    right: 45%;
+    top: 53%;
+  }
+  
+  .iconeperfil{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    top: -35%;
+    left: 8%;
+  }
+
+  .cad1{
+     position: absolute;
+     right: 35%;
+     top: 45%;
+  }
+
+  .cad2{
+    position: absolute;
+    right: 5%;
+    top: 45%;
+  }
+
+  .cad3{
+    position: absolute;
+    right: 55%;
+    top: 65%;
+  }
+
+  .cad4{
+    position: absolute;
+    right: 5%;
+    top: 65%;
+  }
+
+  .cad5{
+    position: absolute;
+    right: 60%;
+    top: 85%;
+  }
+
+  .cad6{
+    position: absolute;
+    right: 30%;
+    top: 85%;
+  }
+
+  label{
+    margin-bottom: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    color: #716f6f;;
+    letter-spacing: 1px;
+  }
+  
+  input{
+    height: 30px;
+    width: 300px;   
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  
+  select{
+    height: 30px;
+    width: 100px; 
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  
+  .bt1{
+    position: absolute;
+    background-color: #FAD9AE;
+    border-radius: 20px;
+    border-color: #FAD9AE;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    padding: 16px;
+    top: 85%;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  .bt2{
+    position: absolute;
+    background-color: #FAD9AE;
+    color: white;
+    border-radius: 20px;
+    border-color: #FAD9AE;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    padding: 16px;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  .bt1:hover, .bt2:hover{
+    background-color: #fdcb8a;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }

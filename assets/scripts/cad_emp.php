@@ -1,11 +1,17 @@
+<?php
+  include("config.php");
+
+  $consulta = $conexao->query("select * from tb_paisessede");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/logo/LogoDefinitivaPI2.png" />
+    <link rel="icon" href="../img/logo/LogoDefinitivaPI2.png" />
     <title>Cadastro Empresarial: Femina Tech</title>
-    <link rel="stylesheet" href="css/style_emp.css" />
+    <link rel="stylesheet" href="../css/style_emp.css" />
   </head>
 
   <body>
@@ -15,7 +21,7 @@
       <h2 class="text2">TECH</h2>
       <img
         class="logo"
-        src="img/logo/LOGO.png"
+        src="../img/logo/LOGO.png"
         alt=" Fundo circular de cor pêssego com a silheuta de uma mulher, cercada pelo nome Femina Tech"
       />
 
@@ -30,7 +36,7 @@
         <h1 style="text-align:center">Seu Cadastro</h1>
         <hr>
      <div class='icone'>
-        <img class="img" src="img/img_cadastro/user-female.png" alt="Icone de uma mulher"/>
+        <img class="img" src="../img/img_cadastro/user-female.png" alt="Icone de uma mulher"/>
      </div> 
 
      <div class="cad1">
@@ -66,21 +72,18 @@
         <div class="cad5">
           <label for="paissede"><b>País sede da empresa</b></label>
             <select name="paissede" id="paissede">
-              <option value="1">Alemanha</option>
-              <option value="2">Brasil</option>
-              <option value="3">Canadá</option>
-              <option value="4">EUA</option>
-              <option value="5">Inglaterra</option>
-              <option value="6">Irlanda</option>
-              <option value="7">Polônia</option>
-              <option value="8">Suécia</option>
+            <?php while($resultado = $consulta->fetch_assoc()){?>
+              <option value="<?php echo $resultado['pai_codigopais'];?>"><?php echo $resultado['pai_paissede'];?></option>
+            <?php }?>
             </select>
       </div>
 
         <div>
-          <button  class="botao1"><a href='index.html'>Cancelar</a></button>
+          <button  class="botao1"><a href='../index.html'>Cancelar</a></button>
           <button type="submit" class="botao2">Pronto</button>
        </div> 
+      </div>
+      </form>
       </div>
     </body>
     </html>

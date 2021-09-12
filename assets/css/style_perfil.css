@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*#A0D9D2   azul
+#FAD9AE   amarelo-pessego|cor da logo
+#716F6F  cinza*/
+header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: #a0d9d2;
+  color: white;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, fantasy;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  width: 15%;
+  bottom: -15%;
+}
+
+.text1 {
+  position: absolute;
+  display: inline;
+  bottom: -18px;
+  font-size: 130px;
+  letter-spacing: 2px;
+  text-align: center;
+  right: 35%;
+}
+
+.text2 {
+  display: inline-block;
+  position: absolute;
+  bottom: 1%;
+  color: #716f6f;
+  font-size: 40px;
+  right: 30%;
+  letter-spacing: 2px;
+}
+
+.divisao {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  top: 95%;
+  background-color: #fad9ae;
+}
+
+#btlogout {
+  display: inline-block;
+  position: absolute;
+  height: 40%;
+  width: 10%;
+  background-color: #716f6f;
+  border-radius: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+  right: 2%;
+  top:10%;
+}
+
+#btlogout:hover {
+  background-color: #939393;
+}
+
+.perfil{
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 96%;
+  top: 25%;
+  left: 2%;
+  border: 1px #716f6f solid;
+}
+
+.decima{
+  display: inline-block;
+  position: relative;
+  height: 40%;
+  width: 100%;
+  background-color: #abe2dc ;
+}
+
+.dropbtn {
+  background-color: #FAD9AE;
+  color: white;
+  border-radius: 20px;
+  border-color: #FAD9AE;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+  padding: 16px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+  left: 90%;
+  top: 5%;
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.menu:hover .dropdown-content {display: block;}
+.menu:hover .dropbtn {background-color: #fdcb8a;}
+
+.nome{
+  position: absolute;
+  font-size: 300%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px; 
+  color: #716f6f;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.funcao{
+  position: absolute;
+  font-size: 120%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px; 
+  color: white;
+  left: 50%;
+  top: 53%;
+  transform: translateX(-50%);
+}
+
+.iconeperfil{
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  top: -35%;
+  left: 8%;
+}
+
+.bt1 a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.info{
+  width: 50%;
+  height: 20%;
+  position: absolute;
+  bottom:25%;
+  left:50%;
+  transform: translateX(-50%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info p{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
