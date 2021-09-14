@@ -1,6 +1,8 @@
 <?php
 include("config.php");
-$consulta = $conexao->query("select * from tb_empresas join tb_paisessede on emp_pai_codigopais = pai_codigopais ");
+include("verifica_login.php");
+$codigo = $_SESSION['codigo'];
+$consulta = $conexao->query("select * from tb_empresas join tb_paisessede on emp_pai_codigopais = pai_codigopais where emp_codigoempresa <>'$codigo'");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +37,7 @@ $consulta = $conexao->query("select * from tb_empresas join tb_paisessede on emp
 <img src="../img/imgbody/perfil2.png" alt="" width="250" class = "empresa">
 <h3 >Nome:<?php echo $resultado['emp_nome']; ?><br></h3>
 <h3 >Email:<?php echo $resultado['emp_email']; ?><br></h3>
-<h3 >Plataforma de apresentação:<?php echo $resultado['emp_plataforma_apresentacao']; ?><br></h3>
+<h3 >Plataforma de apresentação:<a href="<?php echo $resultado['emp_plataforma_apresentacao']?>" target="_blank"><?php echo $resultado['emp_nome']?></a><br></h3>
 <h3 >Áreas que abordam:<?php echo $resultado['emp_are_atuacao']; ?><br></h3>
 <h3 >País sede da empresa:<?php echo $resultado['pai_paissede']; ?><br></h3>
 </div>

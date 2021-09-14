@@ -2,9 +2,9 @@
 include("config.php");
 include("verifica_login.php");
 $codigo = $_SESSION['codigo'];
-$consulta = $conexao->query("select * from tb_desenvolvedoras join tb_linguagem_das_desenvolvedoras on lin_dev_cod_dev = dev_cod_dev join tb_linguagem_programacao on lig_codigolinguagem = lin_lig_codigolinguagem join tb_nacionalidades on dev_nac_codigonacionalidade = nac_codigonacionalidade where dev_cod_dev<>'$codigo'");
-
+$consulta = $conexao->query("select * from tb_desenvolvedoras join tb_nacionalidades on dev_nac_codigonacionalidade = nac_codigonacionalidade where dev_cod_dev<>'$codigo'");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +43,13 @@ $consulta = $conexao->query("select * from tb_desenvolvedoras join tb_linguagem_
 <h3 >Formação acadêmica:<?php echo $resultado['dev_formacaoacademica']; ?><br></h3>
 <h3 >Área de atuação:<?php echo $resultado['dev_areaatuacao']; ?><br></h3>
 <h3 >Condições especiais:<?php echo $resultado['dev_condicaoespecial']; ?><br></h3>
-<h3>Linguagens utilizadas:<?php echo $resultado['lig_linguagemprogramacao'];?></h3>
+<h3>Linguagens utilizadas:<br><?php
+$consulta2 = $conexao->query("select * from tb_desenvolvedoras join tb_linguagem_das_desenvolvedoras on lin_dev_cod_dev = dev_cod_dev join tb_linguagem_programacao on lig_codigolinguagem = lin_lig_codigolinguagem join tb_nacionalidades on dev_nac_codigonacionalidade = nac_codigonacionalidade where dev_cod_dev= ".$resultado ['dev_cod_dev']);
+while($resultado2 = $consulta2->fetch_assoc()){
+  echo $resultado2['lig_linguagemprogramacao'].'<br>';
+  
+}?>
+</h3>
 </div>
 <?php }?>
 </main>
